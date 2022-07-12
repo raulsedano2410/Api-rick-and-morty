@@ -29,27 +29,30 @@ const AllData = () => {
     console.log(location)
 
     return (
-        <div className="App-container">
-            <img className='title2' src={title2} alt="" />
-            <div className='cards-container'>
-
+        <>
+            <div className='header'>
+                <img className='title' src={title2} alt="" />
                 <div>
-                    <input type="number" value={text} onChange={e => setText(e.target.value)} placeholder='1 to 126' />
-                    <button onClick={searchType}>Search</button>
+                <input type="number" value={text} onChange={e => setText(e.target.value)} placeholder='1 to 126' />
+                <button onClick={searchType}>Search</button>
                 </div>
-
                 <Location location={location} />
-
-                <div className='container'>
-                    {location.residents?.map(resident => (
-                        <figure key={resident}>
-                            <ResidentInfo resident={resident} />
-                        </figure>
-                    ))}
-                </div>
-
             </div>
-        </div>
+            <div className="App-container">
+                <div className='cards-container'>
+
+
+                    <div className='container'>
+                        {location.residents?.map(resident => (
+                            <figure key={resident}>
+                                <ResidentInfo resident={resident} />
+                            </figure>
+                        ))}
+                    </div>
+
+                </div>
+            </div>
+        </>
     );
 };
 

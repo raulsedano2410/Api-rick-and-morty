@@ -7,12 +7,31 @@
 
 }
 
-
-.title2 {
-  background-image: url('./assets/images/wallpaper.jpg');
+.App-container {
+  max-height: 100%;
+  min-height: 100%;
+  width: 100%;
+  background-image: url('./assets/images/espacio.jpg');
+  background-position: center;
   background-size: contain;
-  height: 20vh;
-  width: 100vw;
+
+}
+
+.title {
+  max-width: 400px;
+}
+
+.header {
+  background-image: url('./assets/images/wallpaper.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  min-height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 
 }
 
@@ -23,13 +42,15 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 30px;
+  padding: 25px;
   border-radius: 5px;
-  background-color: rgba(12, 135, 223, 0.87);
+  background-color: rgba(6, 6, 18, 0.816);;
+  color: #fff;
+  
 }
 
 .cards-container {
-  height: 100%;
+  min-height: 70vh;
   max-width: 100%;
 
   display: flex;
@@ -45,14 +66,16 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  height: 195px;
+  width: 200px;
+}
+
+.portal img {
+  height: 200px;
 }
 
 /* CARDS */
 
 .container {
-  height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -72,8 +95,8 @@
 }
 
 .img {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   transition: all 500ms ease-out;
   
 }
@@ -81,9 +104,9 @@
 .container figure .capa {
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(6, 6, 129, 0.5);
+  width: 200px;
+  height: 200px;
+  /* background: rgba(6, 6, 129, 0.5); */
   transition: all 500ms ease-out;
   opacity: 0;
   visibility: hidden;
@@ -136,14 +159,16 @@ button {
   color:#fff;
   border-radius: 5px;
   margin: 10px;
-  font-size: 1.5rem;
-  background-color: rgba(12, 135, 223, 0.87);
+  font-size: 1.3rem;
+  background-color: rgba(4, 4, 13, 0.821);;
+
 }
 input {
   padding: 10px;
   border: none;
-  color: #fff;
+  color: rgb(7, 7, 7);
   font-size: 1.3rem;
   width: 150px;
-  background-color: rgba(12, 135, 223, 0.87);
+  background-color: rgb(243, 250, 251);
+
 }
