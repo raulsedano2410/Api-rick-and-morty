@@ -2,7 +2,7 @@ import React from 'react';
 
 const Location = ({location}) => {
     return (
-            <ul>
+            <ul className='location'>
                 <li>Name: {location.name}</li>
                 <li>Type: {location.type}</li>
                 <li>Dimension: {location.dimension}</li>
